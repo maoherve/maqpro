@@ -1,0 +1,42 @@
+
+$paddingXLarge : 150px;
+$paddingLarge : 100px;
+$paddingSmall : 50px;
+
+$margingXLarge : 150px;
+$margingLarge : 110px;
+$margingSmall : 50px;
+
+$dark-color : #323031;
+$background-color : #e1e7e5;
+
+
+$police-color : #DB3A34;
+$police-color-dark : #1C1C1C;
+
+h1, H2, H3 {
+  color: $police-color-dark;
+}
+
+p, .navlink, span, li, ul {
+  color: $police-color;
+}
+
+h1, H2, H3 {
+  font-size: 28px;
+}
+
+p ,a ,span, li, ul, label {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover
+{
+  text-decoration: $background-color !important;
+  cursor:pointer;
+}
+
