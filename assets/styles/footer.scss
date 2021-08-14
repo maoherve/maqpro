@@ -1,0 +1,86 @@
+@import "variable";
+
+$hover-color: #f6f6f3;
+
+
+.linkFooter {
+  color: $police-color;
+}
+.linkFooter:hover,  {
+  color: $hover-color;
+  text-decoration: none;
+}
+
+
+footer {
+  padding: 1rem 0;
+  background-color: $dark-color;
+
+  margin-top: $margingXLarge;
+
+  border-radius:  10% 10% 0 0;
+  border-bottom: 1px solid ;
+}
+
+
+.footer-column {
+  text-align: center;
+  .nav-item {
+    .nav-link {
+      padding: 0.1rem 0;
+    }
+    span.nav-link {
+      color: $police-color;
+    }
+    span.footer-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: $background-color;
+      text-transform: uppercase;
+    }
+
+  }
+  .ulFooter {
+    display: inline-block;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
+.ulFooter.social-buttons {
+  margin-bottom: 0;
+  padding-top: 5px;
+}
+
+.ulFooter.social-buttons li a:active,
+.ulFooter.social-buttons li a:focus,
+.ulFooter.social-buttons li a:hover {
+  background-color: $hover-color;
+}
+
+.ulFooter.social-buttons li a {
+  font-size: 20px;
+  line-height: 28px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: $police-color;
+  border-radius: 100%;
+  outline: 0;
+  background-color: $background-color;
+}
+
+/*
+footer .quick-links {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*/
