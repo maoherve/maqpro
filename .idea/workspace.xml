@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MakeupHomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MakeupHomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/makeup_home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/index.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +188,7 @@
       <workItem from="1628174688433" duration="599000" />
       <workItem from="1628504861934" duration="4000" />
       <workItem from="1628505174656" duration="25130000" />
-      <workItem from="1629027537948" duration="5706000" />
+      <workItem from="1629027537948" duration="6351000" />
     </task>
     <servers />
   </component>
