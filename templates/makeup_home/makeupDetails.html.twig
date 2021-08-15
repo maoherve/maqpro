@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+
+{% block main %}
+    <div class="mt-5">
+
+        <div class="mt-5">
+            {% for makeupDetails in makeupProducts %}
+
+                <p class="card-body">{{ makeupDetails.name }}</p>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -11,6 +11,10 @@
 
                     <div class="middle card-body">
                         <p class="productTitle card-text">{{ makeup.name }}</p>
+
+                        <a href="{{ path('makeup_Products', {'makeup_id': makeup.id}) }}" class="btnOutfit btn">Voir !</a>
+
+
                     </div>
                 </div>
             {% else %}
