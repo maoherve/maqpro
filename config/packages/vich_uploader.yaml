@@ -1,0 +1,12 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        makeup_images:
+            # alias for acced picture via navigator
+            uri_prefix: /images/makeup
+            # path stokage directory
+            upload_destination: '%kernel.project_dir%/public/images/makeup'
+            delete_on_update: true
+            delete_on_remove: true
+

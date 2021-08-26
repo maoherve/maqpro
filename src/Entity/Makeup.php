@@ -6,9 +6,12 @@ use App\Repository\MakeupRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass=MakeupRepository::class)
+ * @Vich\Uploadable
  */
 class Makeup
 {
@@ -33,6 +36,24 @@ class Makeup
     {
         $this->makeupProducts = new ArrayCollection();
     }
+
+    /**
+     * @ORM\Column(type="string")
+     *
+     */
+    private $imageName;
+
+    /**
+     * @Vich\UploadableField(mapping="makeup_images", fileNameProperty="imageName")
+     */
+    private $imageFile;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $updated;
+
+
 
     public function getId(): ?int
     {
@@ -80,4 +101,52 @@ class Makeup
 
         return $this;
     }
+
+
+
+    public function setImageName(?string $imageName): void
+    {
+        $this->imageName = $imageName;
+    }
+
+    public function getImageName(): ?string
+    {
+        return $this->imageName;
+    }
+
+    public function getImageFile(): ?File
+    {
+        return $this->imageFile;
+    }
+
+    /**
+     * @param File|null $imageFile
+     */
+    public function setImageFile(?File $imageFile = null)
+    {
+        $this->imageFile = $imageFile;
+
+        if (null !== $imageFile) {
+            $this->updated = new \Datetime();
+        }
+    }
+
+    /**
+     * @return \DateTimeInterface|null
+     */
+    public function getUpdated(): ?\DateTimeInterface
+    {
+        return $this->updated;
+    }
+
+    /**
+     * @param \DateTimeInterface|null $updated
+     * @return $this
+     */
+    public function setUpdated(?\DateTimeInterface $updated): self
+    {
+        $this->updated = $updated;
+        return $this;
+    }
+
 }

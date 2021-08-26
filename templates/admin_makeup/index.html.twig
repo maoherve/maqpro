@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<title>Makeup index</title>
+
+{% block body %}
+    <h1>Makeup index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>ImageName</th>
+                <th>Updated</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for makeup in makeups %}
+            <tr>
+                <td>{{ makeup.id }}</td>
+                <td>{{ makeup.name }}</td>
+                <td>{{ makeup.imageName }}</td>
+                <td>{{ makeup.updated ? makeup.updated|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('admin_makeup_edit', {'id': makeup.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('admin_makeup_new') }}">Create new</a>
+{% endblock %}

@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="" />
+    <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/maqpro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/maqpro.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MakeupHomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MakeupHomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Makeup.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Makeup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/MakeupProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/MakeupProducts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/makeup_home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/makeup_home/makeupDetails.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/makeupDetails.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,6 +162,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/asset" />
       <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
     </include_path>
   </component>
   <component name="ProjectId" id="1wBocdSXJ3G6H7Ck0syTu2Q2LJX" />
@@ -167,6 +184,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Controller/Admin" />
       <recent name="$PROJECT_DIR$/templates/includes" />
     </key>
   </component>
@@ -189,6 +207,7 @@
       <workItem from="1628504861934" duration="4000" />
       <workItem from="1628505174656" duration="25130000" />
       <workItem from="1629027537948" duration="6351000" />
+      <workItem from="1629710851910" duration="1559000" />
     </task>
     <servers />
   </component>
