@@ -2,14 +2,14 @@
 
 {% block main %}
     <div class="makeupContainer container d-flex mx-auto text-center row">
-        {% for makeupDetails in makeupProducts %}
+        {% for makeupRefDetails in makeupProductsRef %}
             <div class="card col-lg-4 mt-5" style="width: 18rem;">
-                <a href="{{ path('makeup_ref', {'makeup_product_id': makeupDetails.id}) }}">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-body">{{ makeupDetails.name }}</p>
+                        <p class="card-body">{{ makeupRefDetails.name }}</p>
+                        <p class="card-body">{{ makeupRefDetails.ref }}</p>
+                        <p class="card-body">{{ makeupRefDetails.cont }}</p>
+
                     </div>
-                </a>
             </div>
         {% endfor %}
     </div>

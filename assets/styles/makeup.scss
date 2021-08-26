@@ -1,0 +1,35 @@
+
+
+.makeupContainer {
+  margin-top: $margingXLarge;
+  position: relative;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.makeup_image {
+  width: 15rem;
+  height: 15rem;
+  clip-path:ellipse(50% 50%);
+}
+
+
+.contenant {
+  position: relative;
+  text-align: center;
+  color: red;
+}
+
+.text_center {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #DDDDDD;
+  max-width: 50%;
+  min-width: 40%;
+  border-radius: 15% 15% 15% 15%;
+  border-bottom: 1px solid ;
+  border-right: 1px solid ;
+}
