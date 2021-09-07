@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/maqpro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/maqpro.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MakeupHomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MakeupHomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Makeup.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Makeup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/MakeupProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/MakeupProducts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/makeup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/makeup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminMakeupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminMakeupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin_makeup/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin_makeup/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin_makeup/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin_makeup/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin_makeup/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/makeup_home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/makeup_home/makeupDetails.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/makeupDetails.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +184,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/admin" />
       <recent name="$PROJECT_DIR$/src/Controller/Admin" />
       <recent name="$PROJECT_DIR$/templates/includes" />
     </key>
@@ -208,6 +209,11 @@
       <workItem from="1628505174656" duration="25130000" />
       <workItem from="1629027537948" duration="6351000" />
       <workItem from="1629710851910" duration="1559000" />
+      <workItem from="1631034600048" duration="62000" />
+      <workItem from="1631034928773" duration="244000" />
+      <workItem from="1631035178272" duration="403000" />
+      <workItem from="1631035607031" duration="20000" />
+      <workItem from="1631035649651" duration="6000" />
     </task>
     <servers />
   </component>

@@ -20,7 +20,7 @@ class AdminMakeupController extends AbstractController
      */
     public function index(MakeupRepository $makeupRepository): Response
     {
-        return $this->render('admin_makeup/index.html.twig', [
+        return $this->render('admin/admin_makeup/index.html.twig', [
             'makeups' => $makeupRepository->findAll(),
         ]);
     }
@@ -39,7 +39,7 @@ class AdminMakeupController extends AbstractController
             $entityManager->persist($makeup);
             $entityManager->flush();
 
-            return $this->redirectToRoute('admin_makeup_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('admin/admin_makeup_index', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('admin_makeup/new.html.twig', [
@@ -62,7 +62,7 @@ class AdminMakeupController extends AbstractController
             return $this->redirectToRoute('admin_makeup_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('admin_makeup/edit.html.twig', [
+        return $this->renderForm('admin/admin_makeup/edit.html.twig', [
             'makeup' => $makeup,
             'form' => $form,
         ]);
