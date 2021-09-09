@@ -2,5 +2,80 @@
 .navbarMaqPro {
 
   background-color: $dark-color;
-  height: 50px;
+}
+
+.logoName {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: $police-color;
+  font-size: 28px;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+
+.logoName::before {
+  content: "MaqPro";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+                  45deg,
+                  transparent 0,
+                  transparent 2px,
+                  white 2px,
+                  white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+.logoName::after {
+  content: "MaqPro";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+                  135deg,
+                  transparent 0,
+                  transparent 2px,
+                  white 2px,
+                  white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+.logoName:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+.logoName:hover:after {
+  top: -10px;
+  left: -10px;
+}
+
+@media screen and (min-width: 992px) {
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  .navlink {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .navbarMaqPro {
+    height: 120px;
+  }
 }

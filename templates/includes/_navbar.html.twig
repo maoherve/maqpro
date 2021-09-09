@@ -1,16 +1,18 @@
 <nav class="navbarMaqPro navbar navbar-expand-lg fixed-top navbar-dark">
-    <div class="container-fluid">
-        <a class="logoNavbarContainer navbar-brand" href="{{ path('home') }}"><img class="logoNavbar" src=""><span class="logoName">MaqPro</span></a>
+    <div class="navContainer container-fluid">
+        <a class="logoNavbarContainer navbar-brand mb-4" href="{{ path('home') }}"><span class="logoName">MaqPro</span></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="navlink nav-link"  href="">Acceuil</a>
-                <a class="navlink nav-link" href="">Nos produits</a>
-                <a class="navlink nav-link" href="">Horaires</a>
-                <!--<a class="nav-link" href="{n{ path('order') }}">Commande</a>-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navItems navbar-nav">
+                <a class="navlink nav-link" href="">Produits beauté</a>
+                <a class="navlink nav-link" href="">Effets spéciaux / Secourisme</a>
+                <a class="navlink nav-link" href="">Grand publique</a>
+                <a class="navlink nav-link" href="">Nos distributeurs</a>
+                <a class="navlink nav-link" href="">Contactez nous !</a>
+
                 {% if app.user %}
                     {% if is_granted("ROLE_ADMIN") %}
                         <a class="nav-link" href="{{ path('admin_index') }}">Administration</a>

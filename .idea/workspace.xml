@@ -3,19 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/makeup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/makeup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/navbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/variable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminMakeupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminMakeupController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_makeup/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_makeup/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_makeup/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_makeup/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_makeup/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/_footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/_footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/_navbar.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +23,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -179,7 +182,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -214,6 +217,7 @@
       <workItem from="1631035178272" duration="403000" />
       <workItem from="1631035607031" duration="20000" />
       <workItem from="1631035649651" duration="6000" />
+      <workItem from="1631055534495" duration="9595000" />
     </task>
     <servers />
   </component>

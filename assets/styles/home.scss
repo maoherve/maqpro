@@ -8,7 +8,19 @@
   width: 75%;
   margin: 0 auto;
   text-align: justify;
+  color: $police-color-dark;
 }
+
+.test p:first-child::first-letter{
+  color: $police-color;
+  font-weight: bold;
+  font-size: 70px;
+  float: left;
+  line-height: 60px;
+  padding-right: 8px;
+  margin-top: -3px;
+}
+
 
 .barre {
   height:2px;
@@ -20,6 +32,11 @@
 .homeLink {
   margin-top: $margingSmall;
 }
+
+
+
+
+
 
 
 

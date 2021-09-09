@@ -1,9 +1,13 @@
 @import 'variable';
 @import 'home';
 @import 'navbar';
-@import 'footer';
 @import 'makeup';
+@import 'footer';
 
 body {
     background-color: $background-color;
+}
+
+.textFooter {
+    color: $police-color-dark;
 }
