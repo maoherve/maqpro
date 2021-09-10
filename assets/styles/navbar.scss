@@ -10,57 +10,59 @@
   transform: translate(-50%, -50%);
   display: block;
   color: $police-color;
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: 8px;
   cursor: pointer;
-}
-
-.logoName::before {
-  content: "MaqPro";
-  position: absolute;
-  color: transparent;
-  background-image: repeating-linear-gradient(
-                  45deg,
-                  transparent 0,
-                  transparent 2px,
-                  white 2px,
-                  white 4px
-  );
-  -webkit-background-clip: text;
-  top: 0px;
-  left: 0;
-  z-index: -1;
-  transition: 1s;
-}
-
-.logoName::after {
-  content: "MaqPro";
-  position: absolute;
-  color: transparent;
-  background-image: repeating-linear-gradient(
-                  135deg,
-                  transparent 0,
-                  transparent 2px,
-                  white 2px,
-                  white 4px
-  );
-  -webkit-background-clip: text;
-  top: 0px;
-  left: 0px;
-  transition: 1s;
-}
-
-.logoName:hover:before {
-  top: 10px;
-  left: 10px;
-}
-
-.logoName:hover:after {
-  top: -10px;
-  left: -10px;
+  font-family: 'Urbanist', sans-serif;
 }
 
 @media screen and (min-width: 992px) {
+
+  .logoName::before {
+    content: "MaqPro";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+                    45deg,
+                    transparent 0,
+                    transparent 2px,
+                    $background-color 2px,
+                    $background-color 3px
+    );
+    -webkit-background-clip: text;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+  }
+
+  .logoName::after {
+    content: "MaqPro";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+                    135deg,
+                    transparent 0,
+                    transparent 2px,
+                    $background-color 2px,
+                    $background-color 3px
+    );
+    -webkit-background-clip: text;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+  }
+
+  .logoName:hover:before {
+    top: 16px;
+    left: 10px;
+  }
+
+  .logoName:hover:after {
+    top: -16px;
+    left: -10px;
+  }
+
   .navContainer {
     display: flex;
     flex-direction: column;
@@ -76,6 +78,6 @@
   }
 
   .navbarMaqPro {
-    height: 120px;
+    height: 130px;
   }
 }

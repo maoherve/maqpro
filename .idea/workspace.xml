@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/makeup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/makeup.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/navbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/variable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/_footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/_footer.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/_navbar.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +212,7 @@
       <workItem from="1631035178272" duration="403000" />
       <workItem from="1631035607031" duration="20000" />
       <workItem from="1631035649651" duration="6000" />
-      <workItem from="1631055534495" duration="9595000" />
+      <workItem from="1631055534495" duration="13602000" />
     </task>
     <servers />
   </component>
