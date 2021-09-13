@@ -1,8 +1,10 @@
 
 .navbarMaqPro {
-
   background-color: $dark-color;
+  height: 130px;
 }
+
+
 
 .logoName {
   position: absolute;
@@ -75,9 +77,24 @@
   .navlink {
     margin-left: 30px;
     margin-right: 30px;
+    position: relative;
+
   }
 
-  .navbarMaqPro {
-    height: 130px;
+  .navlink:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #d91212;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .navlink:hover:after {
+    width: 100%;
+    left: 0;
   }
 }

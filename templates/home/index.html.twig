@@ -24,30 +24,28 @@
     </section>
 
 
-
     <div class="barre"></div>
 
 
+        <div class="row homeLink">
 
-
-
-        <div class="homeLink">
-            <div class="d-flex mx-auto text-center row">
                 {% for theme in themes %}
-                    <div class="contenant col-lg-4 mt-5">
+                    <div class="testCard container mt-5">
                         <a href="./{{ theme.link }}">
-                            <img src="{{ vich_uploader_asset(theme, 'imageFile') }}" class="card-img-top makeup_image" alt="makeup picture">
-                            <div class="card-body">
-                    </div>
-                    <h2 class="">{{ theme.name }}</h2>
-                    <p>{{ theme.description }}</p>
+                            <img src="{{ vich_uploader_asset(theme, 'imageFile') }}" class=" makeup_image" alt="makeup picture">
+                            <div class="">
+                                <h2 class="">{{ theme.name }}</h2>
+                            </div>
                         </a>
-
                     </div>
                 {% else %}
                     <div class="card-body"><p>Pas de produit disponible dans cette catégorie !</p></div>
                 {% endfor %}
-            </div>
+
         </div>
+
+
+
+
 
 {% endblock %}
