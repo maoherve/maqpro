@@ -4,7 +4,7 @@
     <div class="makeupContainer container d-flex mx-auto text-center row">
 
         {% for makeup in makeups %}
-            <div class="contenant col-lg-4 mt-5">
+            <div class="MakeupDiv col-lg-4 mt-5">
                 <a href="{{ path('makeup_Products', {'makeup_id': makeup.id}) }}">
                     <img src="{{ vich_uploader_asset(makeup, 'imageFile') }}" class="card-img-top makeup_image" alt="makeup picture">
                     <div class="card-body">
