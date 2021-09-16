@@ -1,23 +1,21 @@
 {% extends 'layout.html.twig' %}
 
 {% block main %}
-    <div class="makeupContainer container d-flex mx-auto text-center row">
 
+
+    <div class="row  makeupContainer ">
         {% for makeup in makeups %}
-            <div class="MakeupDiv col-lg-4 mt-5">
+            <div class="homeCard container mt-5">
                 <a href="{{ path('makeup_Products', {'makeup_id': makeup.id}) }}">
                     <img src="{{ vich_uploader_asset(makeup, 'imageFile') }}" class="card-img-top makeup_image" alt="makeup picture">
-                    <div class="card-body">
-                        <p class="text_center">{{ makeup.name }}</p>
+                    <div class="">
+                        <p class="">{{ makeup.name }}</p>
                     </div>
                 </a>
-
             </div>
         {% else %}
             <div class="card-body"><p>Pas de produit disponible dans cette catégorie !</p></div>
         {% endfor %}
     </div>
-
-
 
 {% endblock %}

@@ -1,6 +1,13 @@
 
+@media screen and (min-width: 992px) {
+
+  .homeTextSection {
+    margin-top: $margingXXLarge;
+  }
+}
+
 .homeTextSection {
-  margin-top: $margingXLarge;
+  margin-top: $margingLarge;
   margin-bottom: $margingSmall;
 }
 
@@ -33,23 +40,23 @@
   margin-top: $margingSmall;
 }
 
-.testCard {
+.homeCard {
   border-radius: 30px;
   background-color: white !important;
-  box-shadow: 4px 4px 0px #4b4a4a;
-
+  box-shadow: 5px 5px 3px rgba(84, 84, 84, 0.48);
   position: relative;
-
   width: 23rem;
   display: flex;
   justify-content: center;
+}
 
+.homeCard:hover {
+  color: red;
 }
 
 
 
-
-
+/* animation hover card */
 
 @mixin magic-border($width, $color, $duration, $direction){
   position:relative;
@@ -79,15 +86,10 @@
 }
 
 
-
-
-  .testCard{
-
+  .homeCard{
     a{
-      text-decoration:none;
-      color:#222;
+      text-decoration:none !important;
       padding:20px;
-      background:#efefef;
       text-align:center;
       @include magic-border(2px, $police-color, 0.3s, 0);
       margin:20px;
@@ -95,4 +97,5 @@
       cursor:pointer;
     }
   }
+
 
