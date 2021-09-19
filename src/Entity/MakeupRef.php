@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\MakeupRefRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -22,21 +24,22 @@ class MakeupRef
      */
     private $name;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $ref;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $cont;
 
     /**
      * @ORM\ManyToOne(targetEntity=MakeupProducts::class, inversedBy="makeupRefs")
      * @ORM\JoinColumn(nullable=false)
      */
     private $MakeupProduct;
+
+    /**
+     * @ORM\OneToMany(targetEntity=MakeupRefDetails::class, mappedBy="MakeupRef")
+     */
+    private $makeupRefDetails;
+
+    public function __construct()
+    {
+        $this->makeupRefDetails = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -55,30 +58,6 @@ class MakeupRef
         return $this;
     }
 
-    public function getRef(): ?string
-    {
-        return $this->ref;
-    }
-
-    public function setRef(string $ref): self
-    {
-        $this->ref = $ref;
-
-        return $this;
-    }
-
-    public function getCont(): ?string
-    {
-        return $this->cont;
-    }
-
-    public function setCont(string $cont): self
-    {
-        $this->cont = $cont;
-
-        return $this;
-    }
-
     public function getMakeupProduct(): ?MakeupProducts
     {
         return $this->MakeupProduct;
@@ -87,6 +66,36 @@ class MakeupRef
     public function setMakeupProduct(?MakeupProducts $MakeupProduct): self
     {
         $this->MakeupProduct = $MakeupProduct;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|MakeupRefDetails[]
+     */
+    public function getMakeupRefDetails(): Collection
+    {
+        return $this->makeupRefDetails;
+    }
+
+    public function addMakeupRefDetail(MakeupRefDetails $makeupRefDetail): self
+    {
+        if (!$this->makeupRefDetails->contains($makeupRefDetail)) {
+            $this->makeupRefDetails[] = $makeupRefDetail;
+            $makeupRefDetail->setMakeupRef($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMakeupRefDetail(MakeupRefDetails $makeupRefDetail): self
+    {
+        if ($this->makeupRefDetails->removeElement($makeupRefDetail)) {
+            // set the owning side to null (unless already changed)
+            if ($makeupRefDetail->getMakeupRef() === $this) {
+                $makeupRefDetail->setMakeupRef(null);
+            }
+        }
 
         return $this;
     }

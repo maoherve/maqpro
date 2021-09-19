@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Makeup;
 use App\Entity\MakeupProducts;
+use App\Repository\MakeupRefRepository;
 use App\Repository\MakeupRepository;
 use App\Repository\MakeupProductsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -16,7 +17,7 @@ use Symfony\Component\Routing\Annotation\Route;
  *
  * @Route("/makeup", name="makeup_")
  */
-class MakeupHomeController extends AbstractController
+class MakeupController extends AbstractController
 {
     /**
      * @Route("/", name="index")
@@ -28,8 +29,6 @@ class MakeupHomeController extends AbstractController
         $makeups = $this->getDoctrine()
             ->getRepository(Makeup::class)
             ->findByASC();
-
-
 
         return $this->render('makeup_home/index.html.twig', [
             'makeups' => $makeups
@@ -65,6 +64,21 @@ class MakeupHomeController extends AbstractController
 
         return $this->render('makeup_home/makeupRef.html.twig',
             ['makeupProductsRef' => $makeupProduct->getMakeupRefs(),
+            ]);
+    }
+
+    /**
+     * @param MakeupRefRepository $makeupRefRepository
+     * @param int $makeup_ref_id
+     * @return Response
+     * @Route("/refDetails/{makeup_ref_id}", name="refDetails")
+     */
+    public function showProductRefDetails(MakeupRefRepository $makeupRefRepository, int $makeup_ref_id): Response
+    {
+        $makeupRefDetails = $makeupRefRepository->find(['id' => $makeup_ref_id]);
+
+        return $this->render('makeup_home/makeupRefDetails.html.twig',
+            ['makeupProductsRef' => $makeupRefDetails->getMakeupRefDetails(),
             ]);
     }
 }

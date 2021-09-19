@@ -1,16 +1,17 @@
 {% extends 'layout.html.twig' %}
 
 {% block main %}
-    <div class="makeupContainer container d-flex mx-auto text-center row">
+    <div class="row  makeupContainer ">
         {% for makeupDetails in makeupProducts %}
-            <div class="card col-lg-4 mt-5" style="width: 18rem;">
+            <div class="homeCard container mt-5">
                 <a href="{{ path('makeup_ref', {'makeup_product_id': makeupDetails.id}) }}">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                    <div class="">
                         <p class="card-body">{{ makeupDetails.name }}</p>
                     </div>
                 </a>
             </div>
+        {% else %}
+            <div class="card-body"><p>Pas de produit disponible dans cette catégorie !</p></div>
         {% endfor %}
     </div>
 {% endblock %}
