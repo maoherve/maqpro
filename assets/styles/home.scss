@@ -1,9 +1,14 @@
 
 
-
-.homeTextSection {
+  .homeTextSection {
   margin-top: $margingXXLarge;
   margin-bottom: $margingSmall;
+}
+
+@media screen and (max-width: 990px) {
+  .homeTextSection {
+    margin-top: $margingSmall;
+  }
 }
 
 .homeText {
