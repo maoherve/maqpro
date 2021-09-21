@@ -35,9 +35,15 @@ class MakeupProducts
      */
     private $makeupRefs;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Colours::class, mappedBy="MakeupProduct")
+     */
+    private $colours;
+
     public function __construct()
     {
         $this->makeupRefs = new ArrayCollection();
+        $this->colours = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -94,6 +100,33 @@ class MakeupProducts
             if ($makeupRef->getMakeupProduct() === $this) {
                 $makeupRef->setMakeupProduct(null);
             }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Colours[]
+     */
+    public function getColours(): Collection
+    {
+        return $this->colours;
+    }
+
+    public function addColour(Colours $colour): self
+    {
+        if (!$this->colours->contains($colour)) {
+            $this->colours[] = $colour;
+            $colour->addMakeupProduct($this);
+        }
+
+        return $this;
+    }
+
+    public function removeColour(Colours $colour): self
+    {
+        if ($this->colours->removeElement($colour)) {
+            $colour->removeMakeupProduct($this);
         }
 
         return $this;
