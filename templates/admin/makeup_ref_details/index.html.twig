@@ -1,0 +1,31 @@
+
+{% block main %}
+    <h1>MakeupRefDetails index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for makeup_ref_detail in makeup_ref_details %}
+            <tr>
+                <td>{{ makeup_ref_detail.id }}</td>
+                <td>{{ makeup_ref_detail.Name }}</td>
+                <td>
+                    <a href="{{ path('admin_makeup_ref_details_edit', {'id': makeup_ref_detail.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('admin_makeup_ref_details_new') }}">Create new</a>
+{% endblock %}

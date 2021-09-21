@@ -3,7 +3,12 @@
 {% block main %}
 
     <div class="makeupContainer container d-flex mx-auto text-center row">
-
-       <p>Test</p>
+        {% for makeupRefDetails in makeupRefDetails %}
+            <div class="card col-lg-4 mt-5" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-body">{{ makeupRefDetails.name }}</p>
+                    </div>
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}

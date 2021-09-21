@@ -78,7 +78,7 @@ class MakeupController extends AbstractController
         $makeupRefDetails = $makeupRefRepository->find(['id' => $makeup_ref_id]);
 
         return $this->render('makeup_home/makeupRefDetails.html.twig',
-            ['makeupProductsRef' => $makeupRefDetails->getMakeupRefDetails(),
+            ['makeupRefDetails' => $makeupRefDetails->getMakeupRefDetails(),
             ]);
     }
 }
