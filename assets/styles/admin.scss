@@ -1,0 +1,14 @@
+.adminHomeContainer {
+  margin-top: $margingXXLarge;
+}
+
+.adminContainer {
+  margin-top: $margingXXLarge;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}

@@ -1,0 +1,56 @@
+{% extends 'adminlayout.html.twig' %}
+
+{% block main %}
+
+
+    <div class="container container-fluid mt-5">
+
+        <div class="adminHomeContainer justify-content-around row">
+
+            <div class="card col-6 mt-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Admin des thèmes.</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Modifier les thèmes.</h6>
+                    <a class="btn" href="{{ path('theme_index') }}">Ici !</a>
+                </div>
+            </div>
+
+            <div class="card col-6 mt-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Admin des makeup.</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Modifier les makeup.</h6>
+                    <a class="btn" href="{{ path('admin_makeup_index') }}">Ici !</a>
+                </div>
+            </div>
+
+            <div class="card col-6 mt-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Admin des refs makeup.</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Modifier les refs makeup.</h6>
+                    <a class="btn" href="{{ path('admin_makeup_ref_index') }}">Ici !</a>
+                </div>
+            </div>
+
+            <div class="card col-6 mt-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Admin des refs makeup details.</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Modifier les refs makeup details.</h6>
+                    <a class="btn" href="{{ path('admin_makeup_ref_details_index') }}">Ici !</a>
+                </div>
+            </div>
+
+
+
+
+            {% if is_granted('ROLE_SUPER_ADMIN') %}
+                <div class="card col-6 mt-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Admin des utilisateurs.</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Modifier les éléments de "User".</h6>
+                    </div>
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+{% endblock %}

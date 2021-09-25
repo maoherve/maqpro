@@ -1,7 +1,7 @@
 {% extends 'layout.html.twig' %}
 
 {% block main %}
-    <div class="row  makeupContainer ">
+    <div class="row  makeupContainer">
         {% for makeupDetails in makeupProducts %}
             <div class="homeCard container mt-5">
                 <a href="{{ path('makeup_ref', {'makeup_product_id': makeupDetails.id}) }}">

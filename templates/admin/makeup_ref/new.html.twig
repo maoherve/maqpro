@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-
-<title>New MakeupRef</title>
+{% extends 'adminlayout.html.twig' %}
 
 {% block main %}
-    <h1>Create new MakeupRef</h1>
+    <div class="adminContainer">
 
-    {{ include('admin/makeup_ref/_form.html.twig') }}
+        <h1>Create new MakeupRef</h1>
 
-    <a href="{{ path('admin_makeup_ref_index') }}">back to list</a>
+        {{ include('admin/makeup_ref/_form.html.twig') }}
+
+        <a href="{{ path('admin_makeup_ref_index') }}">back to list</a>
+    </div>
 {% endblock %}

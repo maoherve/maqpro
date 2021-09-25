@@ -1,34 +1,36 @@
-<!DOCTYPE html>
-
-<title>MakeupRef index</title>
+{% extends 'adminlayout.html.twig' %}
 
 {% block main %}
-    <h1>MakeupRef index</h1>
+    <div class="adminContainer">
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for makeup_ref in makeup_refs %}
-            <tr>
-                <td>{{ makeup_ref.id }}</td>
-                <td>{{ makeup_ref.name }}</td>
-                <td>
-                    <a href="{{ path('admin_makeup_ref_edit', {'id': makeup_ref.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="5">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+        <h1>MakeupRef index</h1>
 
-    <a href="{{ path('admin_makeup_ref_new') }}">Create new</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for makeup_ref in makeup_refs %}
+                <tr>
+                    <td>{{ makeup_ref.id }}</td>
+                    <td>{{ makeup_ref.name }}</td>
+                    <td>
+                        <a href="{{ path('admin_makeup_ref_edit', {'id': makeup_ref.id}) }}">edit</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="5">no records found</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="{{ path('admin_makeup_ref_new') }}">Create new</a>
+        <a href="{{ path('administration') }}">Back Menu</a>
+    </div>
 {% endblock %}

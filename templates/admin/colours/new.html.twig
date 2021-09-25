@@ -1,0 +1,12 @@
+{% extends 'adminlayout.html.twig' %}
+
+{% block main %}
+    <div class="adminContainer">
+
+        <h1>Create new Colours</h1>
+
+        {{ include('admin/colours/_form.html.twig') }}
+
+        <a href="{{ path('admin_colours_index') }}">back to list</a>
+    </div>
+{% endblock %}
