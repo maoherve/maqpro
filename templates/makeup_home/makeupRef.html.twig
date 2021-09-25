@@ -4,6 +4,21 @@
 
     <div class="makeupContainer container d-flex mx-auto text-center row">
 
+        {% for makeupRefDetails in makeupProductsRef  %}
+            {% if makeupRefDetails.name == "palette 3 couleurs" %}
+                {# break #}
+                <div class="card col-lg-4 mt-5" style="width: 18rem;">
+                    <a href="{{ path('makeup_colours', {'makeup_product_id': app.request.get('makeup_product_id')}) }}">
+                        <div class="card-body">
+                            <p class="card-body">Nos couleurs et conditionnements</p>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+
+
         {% for makeupRefDetails in makeupProductsRef %}
             <div class="card col-lg-4 mt-5" style="width: 18rem;">
                 <a href="{{ path('makeup_refDetails', {'makeup_ref_id': makeupRefDetails.id}) }}">

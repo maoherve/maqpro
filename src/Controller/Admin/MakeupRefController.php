@@ -80,6 +80,6 @@ class MakeupRefController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('admin/makeup_ref_index', [], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('admin_makeup_ref_index', [], Response::HTTP_SEE_OTHER);
     }
 }

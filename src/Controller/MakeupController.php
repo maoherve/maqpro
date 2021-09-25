@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Colours;
 use App\Entity\Makeup;
 use App\Entity\MakeupProducts;
 use App\Repository\MakeupRefRepository;
@@ -48,7 +49,7 @@ class MakeupController extends AbstractController
 
         return $this->render('makeup_home/makeupDetails.html.twig',
             ['makeupProducts' => $makeup->getMakeupProducts(),
-                'makeupName' => $makeup->getName()
+                'makeupName' => $makeup->getName(),
                 ]);
     }
 
@@ -64,6 +65,7 @@ class MakeupController extends AbstractController
 
         return $this->render('makeup_home/makeupRef.html.twig',
             ['makeupProductsRef' => $makeupProduct->getMakeupRefs(),
+                'test' => $makeupProduct->getId(),
             ]);
     }
 
@@ -79,6 +81,21 @@ class MakeupController extends AbstractController
 
         return $this->render('makeup_home/makeupRefDetails.html.twig',
             ['makeupRefDetails' => $makeupRefDetails->getMakeupRefDetails(),
+            ]);
+    }
+
+    /**
+     * @param MakeupProductsRepository $makeupProductsRepository
+     * @param int $makeup_product_id
+     * @return Response
+     * @Route("/D/{makeup_product_id}", name="colours")
+     */
+    public function showProductColoursAndPackagings(MakeupProductsRepository $makeupProductsRepository, int $makeup_product_id): Response
+    {
+        $makeupColoursDetails = $makeupProductsRepository->find(['id' => $makeup_product_id]);
+
+        return $this->render('makeup_home/makeupColoursAndPackagings.html.twig',
+            ['makeupColoursDetails' => $makeupColoursDetails->getColours(),
             ]);
     }
 }

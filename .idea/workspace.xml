@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MakeupRefController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MakeupRefController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MakeupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MakeupController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admin_makeup/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/makeup_home/makeupRefDetails.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/makeupRefDetails.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/MakeupProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/MakeupProducts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/makeup_home/makeupRef.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/makeupRef.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
