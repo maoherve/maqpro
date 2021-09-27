@@ -39,8 +39,13 @@
                 </div>
             </div>
 
-
-
+            <div class="card col-6 mt-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Admin des packagings.</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Modifier les packagings.</h6>
+                    <a class="btn" href="{{ path('admin_packaging_index') }}">Ici !</a>
+                </div>
+            </div>
 
             {% if is_granted('ROLE_SUPER_ADMIN') %}
                 <div class="card col-6 mt-3" style="width: 18rem;">

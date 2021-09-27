@@ -92,10 +92,11 @@ class MakeupController extends AbstractController
      */
     public function showProductColoursAndPackagings(MakeupProductsRepository $makeupProductsRepository, int $makeup_product_id): Response
     {
-        $makeupColoursDetails = $makeupProductsRepository->find(['id' => $makeup_product_id]);
+        $makeupColoursAndPackagings = $makeupProductsRepository->find(['id' => $makeup_product_id]);
 
         return $this->render('makeup_home/makeupColoursAndPackagings.html.twig',
-            ['makeupColoursDetails' => $makeupColoursDetails->getColours(),
+            ['makeupColoursDetails' => $makeupColoursAndPackagings->getColours(),
+                'makeupPackagingDetails' => $makeupColoursAndPackagings->getPackagings(),
             ]);
     }
 }

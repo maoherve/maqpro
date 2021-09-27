@@ -3,27 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ColoursController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ColoursController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admin_makeup/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admin_makeup/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admin_makeup/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_makeup/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/makeup_ref/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/makeup_ref/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/makeup_ref/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/makeup_ref/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/makeup_ref/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/makeup_ref/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/makeup_ref_details/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/makeup_ref_details/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/makeup_ref_details/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/makeup_ref_details/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/makeup_ref_details/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/makeup_ref_details/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/theme/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/theme/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/theme/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/theme/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/theme/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/theme/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/colours/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/colours/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/colours/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/colours/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/colours/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/colours/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/colours/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/colours/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/colours/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/colours/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/colours/show.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/makeup_home/makeupDetails.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/makeupDetails.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/makeup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/makeup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MakeupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MakeupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/MakeupProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/MakeupProducts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/makeup_home/makeupColoursAndPackagings.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/makeupColoursAndPackagings.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,8 +185,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/admin" />
       <recent name="$PROJECT_DIR$/src/Controller/Admin" />
+      <recent name="$PROJECT_DIR$/templates/admin" />
       <recent name="$PROJECT_DIR$/templates/includes" />
     </key>
   </component>

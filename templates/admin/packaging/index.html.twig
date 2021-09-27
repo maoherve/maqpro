@@ -1,0 +1,38 @@
+{% extends 'adminlayout.html.twig' %}
+
+{% block main %}
+    <div class="adminContainer">
+        <h1>Packaging index</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>ImageName</th>
+                    <th>Updated</th>
+                    <th>actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for packaging in packagings %}
+                <tr>
+                    <td>{{ packaging.id }}</td>
+                    <td>{{ packaging.name }}</td>
+                    <td>{{ packaging.imageName }}</td>
+                    <td>{{ packaging.updated ? packaging.updated|date('Y-m-d H:i:s') : '' }}</td>
+                    <td>
+                        <a href="{{ path('admin_packaging_edit', {'id': packaging.id}) }}">edit</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="5">no records found</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="{{ path('admin_packaging_new') }}">Create new</a>
+    </div>
+{% endblock %}

@@ -5,6 +5,7 @@
   position: relative;
 
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -31,4 +32,22 @@
   min-width: 40%;
   border-bottom: 1px solid ;
   border-right: 1px solid ;
+}
+
+
+
+
+.carouselPackagings {
+  margin-top: $margingXXLarge ;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.coloursContainer {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
