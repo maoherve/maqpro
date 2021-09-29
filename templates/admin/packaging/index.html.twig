@@ -1,9 +1,8 @@
 {% extends 'adminlayout.html.twig' %}
 
 {% block main %}
-
     <div class="adminContainer">
-        <h1>Makeup index</h1>
+        <h1>Packaging index</h1>
 
         <table class="table">
             <thead>
@@ -16,14 +15,14 @@
                 </tr>
             </thead>
             <tbody>
-            {% for makeup in makeups %}
+            {% for packaging in packagings %}
                 <tr>
-                    <td>{{ makeup.id }}</td>
-                    <td>{{ makeup.name }}</td>
-                    <td>{{ makeup.imageName }}</td>
-                    <td>{{ makeup.updated ? makeup.updated|date('Y-m-d H:i:s') : '' }}</td>
+                    <td>{{ packaging.id }}</td>
+                    <td>{{ packaging.name }}</td>
+                    <td>{{ packaging.imageName }}</td>
+                    <td>{{ packaging.updated ? packaging.updated|date('Y-m-d H:i:s') : '' }}</td>
                     <td>
-                        <a href="{{ path('admin_makeup_edit', {'id': makeup.id}) }}">edit</a>
+                        <a href="{{ path('admin_packaging_edit', {'id': packaging.id}) }}">edit</a>
                     </td>
                 </tr>
             {% else %}
@@ -34,8 +33,7 @@
             </tbody>
         </table>
 
-        <a href="{{ path('admin_makeup_new') }}">Create new</a>
+        <a href="{{ path('admin_packaging_new') }}">Create new</a>
         <a href="{{ path('administration') }}">Back Menu</a>
-
     </div>
 {% endblock %}

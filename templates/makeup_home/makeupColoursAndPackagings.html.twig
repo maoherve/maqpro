@@ -1,13 +1,68 @@
 {% extends 'layout.html.twig' %}
 
 {% block main %}
-    <div class="makeupContainer container d-flex mx-auto text-center row">
-        {% for makeupRefDetails in makeupColoursDetails %}
-            <div class="card col-lg-4 mt-5" style="width: 18rem;">
-                <div class="card-body">
+
+
+
+
+    <div id="carouselPackaging" class="carouselPackagings carousel slide text-center" data-bs-ride="carousel" data-interval="10000">
+        <ol class="carousel-indicators">
+            {% if makeupPackagingDetails is not empty %}
+                {% for makeupRefDetails in makeupPackagingDetails %}
+                    <li data-bs-target="#carouselPackaging" data-bs-slide-to="{{ loop.index-1 }}" class="carouselControl {{ loop.first ? 'active': '' }} "></li>
+                {% endfor %}
+            {% endif %}
+        </ol>
+
+        <div class="carousel-inner">
+            {% if makeupPackagingDetails is not empty %}
+                {% for makeupRefDetails in makeupPackagingDetails %}
+
+                    <div class="carousel-item {{ loop.first ? 'active': '' }}">
+                        <img src="{{ vich_uploader_asset(makeupRefDetails, 'imageFile') }}"
+                             class="w-25  h-auto" alt="makeup picture">
+
+                        <p class="card-body">{{ makeupRefDetails.name }}</p>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <a class="carousel-control-prev" href="#carouselPackaging" role="button" data-bs-slide="prev">
+            <span class=" carouselControl carouselArrow carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carouselControl visually-hidden">Précédent</span>
+        </a>
+        <a class="carouselArrow carousel-control-next" href="#carouselPackaging" role="button" data-bs-slide="next">
+            <span class=" carouselControl carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carouselControl visually-hidden">Suivant</span>
+        </a>
+    </div>
+
+
+<div class="testt">
+
+    <div class="coloursContainer container d-flex mx-auto text-center row">
+        <h2 class="mt-5">Packaging</h2>
+        {% if makeupPackagingDetails is not empty %}
+            {% for makeupRefDetails in makeupPackagingDetails %}
+                <div class="item-zoom card col-lg-4 m-3" style="width: 12rem; height: 12rem;">
+                    <img src="{{ vich_uploader_asset(makeupRefDetails, 'imageFile') }}"
+                         class="mt-2  " alt="makeup picture">
                     <p class="card-body">{{ makeupRefDetails.name }}</p>
                 </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        {% endif %}
     </div>
+
+
+    <div class="coloursContainer container d-flex mx-auto text-center row">
+        <h2 class="mt-5">Couleurs</h2>
+            {% for makeupRefDetails in makeupColoursDetails %}
+                    <div class="item-zoom card col-lg-4 m-3" style="width: 12rem; height: 12rem;">
+                        <img src="{{ vich_uploader_asset(makeupRefDetails, 'imageFile') }}"
+                             class="mt-2  " alt="makeup picture">
+                        <p class="card-body">{{ makeupRefDetails.name }}</p>
+                    </div>
+            {% endfor %}
+    </div>
+</div>
 {% endblock %}

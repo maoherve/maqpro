@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\Admin;
 
 use App\Entity\Colours;
 use App\Form\ColoursType;
@@ -11,22 +11,22 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/colours")
+ * @Route("/admin/colours")
  */
 class ColoursController extends AbstractController
 {
     /**
-     * @Route("/", name="colours_index", methods={"GET"})
+     * @Route("/", name="admin_colours_index", methods={"GET"})
      */
     public function index(ColoursRepository $coloursRepository): Response
     {
-        return $this->render('colours/index.html.twig', [
+        return $this->render('admin/colours/index.html.twig', [
             'colours' => $coloursRepository->findAll(),
         ]);
     }
 
     /**
-     * @Route("/new", name="colours_new", methods={"GET","POST"})
+     * @Route("/new", name="admin_colours_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -39,27 +39,17 @@ class ColoursController extends AbstractController
             $entityManager->persist($colour);
             $entityManager->flush();
 
-            return $this->redirectToRoute('colours_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('admin_colours_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('colours/new.html.twig', [
+        return $this->renderForm('admin/colours/new.html.twig', [
             'colour' => $colour,
             'form' => $form,
         ]);
     }
 
     /**
-     * @Route("/{id}", name="colours_show", methods={"GET"})
-     */
-    public function show(Colours $colour): Response
-    {
-        return $this->render('colours/show.html.twig', [
-            'colour' => $colour,
-        ]);
-    }
-
-    /**
-     * @Route("/{id}/edit", name="colours_edit", methods={"GET","POST"})
+     * @Route("/{id}/edit", name="admin_colours_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, Colours $colour): Response
     {
@@ -69,17 +59,17 @@ class ColoursController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('colours_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('admin_colours_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('colours/edit.html.twig', [
+        return $this->renderForm('admin/colours/edit.html.twig', [
             'colour' => $colour,
             'form' => $form,
         ]);
     }
 
     /**
-     * @Route("/{id}", name="colours_delete", methods={"POST"})
+     * @Route("/{id}", name="admin_colours_delete", methods={"POST"})
      */
     public function delete(Request $request, Colours $colour): Response
     {
@@ -89,6 +79,6 @@ class ColoursController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('colours_index', [], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('admin_colours_index', [], Response::HTTP_SEE_OTHER);
     }
 }

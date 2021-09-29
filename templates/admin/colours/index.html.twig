@@ -1,41 +1,36 @@
 {% extends 'adminlayout.html.twig' %}
 
 {% block main %}
-
     <div class="adminContainer">
-        <h1>Makeup index</h1>
+
+        <h1>Colours index</h1>
 
         <table class="table">
             <thead>
                 <tr>
                     <th>Id</th>
                     <th>Name</th>
-                    <th>ImageName</th>
-                    <th>Updated</th>
                     <th>actions</th>
                 </tr>
             </thead>
             <tbody>
-            {% for makeup in makeups %}
+            {% for colour in colours %}
                 <tr>
-                    <td>{{ makeup.id }}</td>
-                    <td>{{ makeup.name }}</td>
-                    <td>{{ makeup.imageName }}</td>
-                    <td>{{ makeup.updated ? makeup.updated|date('Y-m-d H:i:s') : '' }}</td>
+                    <td>{{ colour.id }}</td>
+                    <td>{{ colour.name }}</td>
                     <td>
-                        <a href="{{ path('admin_makeup_edit', {'id': makeup.id}) }}">edit</a>
+                        <a href="{{ path('admin_colours_edit', {'id': colour.id}) }}">edit</a>
                     </td>
                 </tr>
             {% else %}
                 <tr>
-                    <td colspan="5">no records found</td>
+                    <td colspan="3">no records found</td>
                 </tr>
             {% endfor %}
             </tbody>
         </table>
 
-        <a href="{{ path('admin_makeup_new') }}">Create new</a>
+        <a href="{{ path('admin_colours_new') }}">Create new</a>
         <a href="{{ path('administration') }}">Back Menu</a>
-
     </div>
 {% endblock %}

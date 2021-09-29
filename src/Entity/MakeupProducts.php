@@ -40,10 +40,16 @@ class MakeupProducts
      */
     private $colours;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Packaging::class, mappedBy="MakeupProduct")
+     */
+    private $packagings;
+
     public function __construct()
     {
         $this->makeupRefs = new ArrayCollection();
         $this->colours = new ArrayCollection();
+        $this->packagings = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -129,6 +135,36 @@ class MakeupProducts
             // set the owning side to null (unless already changed)
             if ($colour->getMakeupProduct() === $this) {
                 $colour->setMakeupProduct(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Packaging[]
+     */
+    public function getPackagings(): Collection
+    {
+        return $this->packagings;
+    }
+
+    public function addPackaging(Packaging $packaging): self
+    {
+        if (!$this->packagings->contains($packaging)) {
+            $this->packagings[] = $packaging;
+            $packaging->setMakeupProduct($this);
+        }
+
+        return $this;
+    }
+
+    public function removePackaging(Packaging $packaging): self
+    {
+        if ($this->packagings->removeElement($packaging)) {
+            // set the owning side to null (unless already changed)
+            if ($packaging->getMakeupProduct() === $this) {
+                $packaging->setMakeupProduct(null);
             }
         }
 

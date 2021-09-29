@@ -1,0 +1,13 @@
+{% extends 'adminlayout.html.twig' %}
+
+{% block main %}
+    <div class="adminContainer">
+        <h1>Edit Packaging</h1>
+
+        {{ include('admin/packaging/_form.html.twig', {'button_label': 'Update'}) }}
+
+        <a href="{{ path('admin_packaging_index') }}">back to list</a>
+
+        {{ include('admin/packaging/_delete_form.html.twig') }}
+    </div>
+{% endblock %}

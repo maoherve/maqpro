@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+{% extends 'adminlayout.html.twig' %}
 
-<title>New Theme</title>
+{% block main %}
+    <div class="adminContainer">
+        <h1>Create new Theme</h1>
 
-{% block body %}
-    <h1>Create new Theme</h1>
+        {{ include('admin/theme/_form.html.twig') }}
 
-    {{ include('admin/theme/_form.html.twig') }}
-
-    <a href="{{ path('theme_index') }}">back to list</a>
+        <a href="{{ path('theme_index') }}">back to list</a>
+    </div>
 {% endblock %}

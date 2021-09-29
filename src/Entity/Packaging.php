@@ -2,16 +2,16 @@
 
 namespace App\Entity;
 
-use App\Repository\ColoursRepository;
+use App\Repository\PackagingRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
- * @ORM\Entity(repositoryClass=ColoursRepository::class)
+ * @ORM\Entity(repositoryClass=PackagingRepository::class)
  * @Vich\Uploadable
  */
-class Colours
+class Packaging
 {
     /**
      * @ORM\Id
@@ -26,7 +26,7 @@ class Colours
     private $name;
 
     /**
-     * @ORM\ManyToOne(targetEntity=MakeupProducts::class, inversedBy="colours")
+     * @ORM\ManyToOne(targetEntity=MakeupProducts::class, inversedBy="packagings")
      */
     private $MakeupProduct;
 
@@ -38,7 +38,7 @@ class Colours
     private $imageName;
 
     /**
-     * @Vich\UploadableField(mapping="colours_images", fileNameProperty="imageName")
+     * @Vich\UploadableField(mapping="packaging_images", fileNameProperty="imageName")
      */
     private $imageFile;
 
