@@ -5,9 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/makeup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/makeup.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MakeupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MakeupController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/MakeupProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/MakeupProducts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/packaging/pack1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/packaging/pack2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/packaging/pack3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Colours.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Colours.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ColoursType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ColoursType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/packaging/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/packaging/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/makeup_home/makeupColoursAndPackagings.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/makeupColoursAndPackagings.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
