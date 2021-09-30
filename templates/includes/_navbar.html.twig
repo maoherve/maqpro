@@ -9,9 +9,9 @@
             <div class="navItems navbar-nav">
                 <a class="navlink nav-link" href="{{ path('makeup_index') }}">Produits beauté</a>
                 <a class="navlink nav-link" href="">Effets spéciaux / Secourisme</a>
+                <a class="navlink nav-link" href="">Formation</a>
                 <a class="navlink nav-link" href="">Grand publique</a>
                 <a class="navlink nav-link" href="">Nos distributeurs</a>
-                <a class="navlink nav-link" href="">Contactez nous !</a>
 
                 {% if app.user %}
                     {% if is_granted("ROLE_ADMIN") %}

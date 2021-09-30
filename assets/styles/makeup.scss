@@ -59,7 +59,13 @@
 
  }
 
+.titleColoursAndPack {
+  text-decoration: underline;
+}
 
+.refTexte {
+  color: $police-color-dark;
+}
 
 .item-zoom img {
   vertical-align: top;
@@ -75,15 +81,28 @@
   transform: scale(1.15);
 }
 
+.infoColoursAndPack {
+  text-align: center;
+}
 
 @media screen and (min-width: 992px) {
 
-  .testt {
+  .packAndColoursContainer {
+    margin-top: $margingXXLarge;
+  }
+
+  .containerColoursAndPack {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: stretch;
     align-content: stretch;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .packAndColoursContainer {
+    margin-top: $margingLarge;
   }
 }
