@@ -1,8 +1,8 @@
 
 
-  .homeTextSection {
-  margin-top: $margingXXLarge;
-  margin-bottom: $margingSmall;
+.homeTextSection {
+margin-top: $margingXXLarge;
+margin-bottom: $margingSmall;
 }
 
 @media screen and (max-width: 990px) {
@@ -18,7 +18,7 @@
   color: $police-color-dark;
 }
 
-.test p:first-child::first-letter{
+.homeTextContainer p:first-child::first-letter{
   color: $police-color;
   font-weight: bold;
   font-size: 70px;

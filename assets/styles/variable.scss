@@ -23,12 +23,16 @@ h1, H2, H3 {
   color: $police-color-dark;
 }
 
-p, .navlink, li, ul {
+p, .navlink, li {
+  color: $police-color-dark;
+}
+
+li {
   color: $police-color;
 }
 
 h1, H2, H3 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 p ,a ,span, li, ul, label {

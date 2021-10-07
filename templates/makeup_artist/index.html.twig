@@ -1,0 +1,19 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}MaqPro{% endblock %}
+
+{% block main %}
+    <div class="makeupArtistContainer container">
+        {% for text in makeupArtist %}
+            <span class="makeupArtistText">
+                {{ text.text |raw}}
+
+                Pour vous inscrire, envoyez un e-mail à
+                <a class="mailMaqpro" href="mailto:maqpro@orange.fr">maqpro@orange.fr</a>
+                en indiquant vos nom, prénom,
+                adresse, téléphone et la date à laquelle vous souhaiteriez participer au stage.
+                Notre réponse vous sera adressée par mail retour !
+            </span>
+        {% endfor %}
+    </div>
+{% endblock %}

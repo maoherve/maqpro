@@ -1,5 +1,6 @@
 
 
+
 .makeupContainer {
   margin-top: $margingXLarge;
   position: relative;
@@ -86,6 +87,14 @@
 }
 
 @media screen and (min-width: 992px) {
+
+  .makeupContainer:before {
+    content:url("/./public/images/background/maxresdefault.jpeg");
+    position:absolute;
+    opacity:.30;
+    z-index:-1;
+    margin-top: -30px;
+  }
 
   .packAndColoursContainer {
     margin-top: $margingXXLarge;
