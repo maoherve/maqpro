@@ -13,8 +13,9 @@
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="navdrop dropdown-item " href="{{ path('makeup_index') }}">Tout</a>
-                        <a class="navdrop dropdown-item" href="#">Another action</a>
-                        <a class="navdrop dropdown-item" href="#">Something else here</a>
+                        <a class="navdrop dropdown-item" href="{{ path('makeup_Products', {'makeup_id': 1}) }}">Fond de teint</a>
+                        <a class="navdrop dropdown-item" href="{{ path('makeup_Products', {'makeup_id': 2}) }}">Lèvre</a>
+                        <a class="navdrop dropdown-item" href="{{ path('makeup_Products', {'makeup_id': 3}) }}">Yeux</a>
                     </div>
                 </li>
 
