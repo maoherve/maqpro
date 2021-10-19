@@ -12,12 +12,14 @@ $margingSmall : 90px;
 $margingXSmall : 50px;
 
 
-$dark-color : #1A1A1A;
+$dark-color : #000000;
 $background-color : rgba(245, 245, 245, 0.86);
+$hover-color: #BEBEBE;
 
 
+$police-color-soft : #FDFDFD;
 $police-color : #DB3A34;
-$police-color-dark : #1C1C1C;
+$police-color-dark : #1A1A1A;
 
 h1, H2, H3 {
   color: $police-color-dark;

@@ -7,7 +7,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navItems navbar-nav">
-                <a class="navlink nav-link" href="{{ path('makeup_index') }}">Produits beauté</a>
+
+                <li class="nav-item dropdown">
+                    <a class="navlink nav-link">Produits beauté</a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="navdrop dropdown-item " href="{{ path('makeup_index') }}">Tout</a>
+                        <a class="navdrop dropdown-item" href="#">Another action</a>
+                        <a class="navdrop dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
                 <a class="navlink nav-link" href="">Effets spéciaux / Secourisme</a>
                 <a class="navlink nav-link" href="{{ path('makeup_artist') }}">Professionnels du
                     maquillage</a>

@@ -73,7 +73,7 @@ class MakeupController extends AbstractController
      * @param MakeupRefRepository $makeupRefRepository
      * @param int $makeup_ref_id
      * @return Response
-     * @Route("/refDetails/{makeup_ref_id}", name="refDetails")
+     * @Route("/ref/details/{makeup_ref_id}", name="refDetails")
      */
     public function showProductRefDetails(MakeupRefRepository $makeupRefRepository, int $makeup_ref_id): Response
     {
@@ -88,7 +88,7 @@ class MakeupController extends AbstractController
      * @param MakeupProductsRepository $makeupProductsRepository
      * @param int $makeup_product_id
      * @return Response
-     * @Route("/D/{makeup_product_id}", name="colours")
+     * @Route("/details/{makeup_product_id}", name="colours")
      */
     public function showProductColoursAndPackagings(MakeupProductsRepository $makeupProductsRepository, int $makeup_product_id): Response
     {
