@@ -1,0 +1,13 @@
+{% extends 'adminlayout.html.twig' %}
+
+{% block main %}
+    <div class="adminContainer container">
+        <h1>Edit Carousel</h1>
+
+        {{ include('admin/admin_carousel/_form.html.twig', {'button_label': 'Update'}) }}
+
+        <a href="{{ path('admin_carousel_index') }}">back to list</a>
+
+        {{ include('admin/admin_carousel/_delete_form.html.twig') }}
+    </div>
+{% endblock %}

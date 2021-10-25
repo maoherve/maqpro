@@ -7,3 +7,9 @@ liip_imagine:
             quality: 85 # Qualité de l'image
             filters: # Liste des filtres à appliquer
                 thumbnail: { size: [ 200, 150 ], mode: outbound }
+
+
+        carouselImages: # Nom du filtre
+            quality: 85 # Qualité de l'image
+            filters: # Liste des filtres à appliquer
+                thumbnail: { size: [ 2520, 1200 ]}

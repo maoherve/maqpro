@@ -1,3 +1,6 @@
+.carouselHome {
+  margin-top: 128px;
+}
 
 
 .homeTextSection {
@@ -8,6 +11,10 @@ margin-bottom: $margingSmall;
 @media screen and (max-width: 990px) {
   .homeTextSection {
     margin-top: $margingSmall;
+  }
+
+  .carouselHome {
+    margin-top: 54px;
   }
 }
 
@@ -28,22 +35,45 @@ margin-bottom: $margingSmall;
   margin-top: -3px;
 }
 
+.line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
 
+.line2 {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
 .barre {
+  height: 2px;
+  width: 30%;
+  background-color: $dark-color;
+}
+.barre2 {
   height:2px;
-  width: 80%;
+  width: 40%;
   margin: 0 auto;
   background-color: $dark-color;
 }
+
 
 .homeLink {
   margin-top: $margingSmall;
 }
 
 .homeCard {
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: white !important;
-  box-shadow: 0 5px 12px rgb(60 82 95 / 65%);
+  box-shadow: 0 5px 12px rgb(60 82 95 / 55%);
   position: relative;
   width: 300px;
   height: 300px;
@@ -100,5 +130,6 @@ margin-bottom: $margingSmall;
       cursor:pointer;
     }
   }
+
 
 
