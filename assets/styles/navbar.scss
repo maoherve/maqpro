@@ -11,6 +11,9 @@
 .navdrop {
   color: $hover-color;
 }
+.navdrop:active {
+  color: $hover-color !important;
+}
 
 
 .navbarMaqPro {

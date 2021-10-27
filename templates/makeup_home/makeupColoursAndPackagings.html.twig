@@ -36,11 +36,35 @@
             <h2 class="titleColoursAndPack mt-5 mb-5">Couleurs</h2>
                 {% for makeupRefDetails in makeupColoursDetails %}
                         <div class="item-zoom card  m-3" style="width: 12rem; height: 12rem;">
+                            <a type="button" class="" data-bs-toggle="modal" data-bs-target="#a{{ makeupRefDetails.id }}">
                             <img src="{{ vich_uploader_asset(makeupRefDetails, 'imageFile') }}"
                                  class="mt-2" alt="colours picture">
+                            </a>
                             <p class="refTexte card-body">{{ makeupRefDetails.name }}</p>
+                            <p>{{ makeupRefDetails.id }}</p>
                         </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="a{{ makeupRefDetails.id }}" tabindex="-1" aria-labelledby="a{{ makeupRefDetails.id }}" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="item-zoom card  m-3" style="width: 12rem; height: 12rem;">
+                                            <img src="{{ vich_uploader_asset(makeupRefDetails, 'imageFile')  }}"
+                                                 class="mt-2" alt="colours picture">
+                                        <p class="refTexte card-body">{{ makeupRefDetails.name }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 {% endfor %}
+
         </div>
     </div>
 </div>
