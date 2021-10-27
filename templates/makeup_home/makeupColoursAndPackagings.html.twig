@@ -41,7 +41,6 @@
                                  class="mt-2" alt="colours picture">
                             </a>
                             <p class="refTexte card-body">{{ makeupRefDetails.name }}</p>
-                            <p>{{ makeupRefDetails.id }}</p>
                         </div>
 
 
@@ -50,11 +49,10 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="item-zoom card  m-3" style="width: 12rem; height: 12rem;">
+                                    <div class=" card  ">
                                             <img src="{{ vich_uploader_asset(makeupRefDetails, 'imageFile')  }}"
                                                  class="mt-2" alt="colours picture">
                                         <p class="refTexte card-body">{{ makeupRefDetails.name }}</p>

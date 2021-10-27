@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/_navbar.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/makeup_home/makeupColoursAndPackagings.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/makeupColoursAndPackagings.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +222,7 @@
       <workItem from="1634057752197" duration="11473000" />
       <workItem from="1634729086911" duration="6462000" />
       <workItem from="1635086851708" duration="3698000" />
-      <workItem from="1635320445396" duration="6257000" />
+      <workItem from="1635320445396" duration="6571000" />
     </task>
     <servers />
   </component>
