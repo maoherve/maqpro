@@ -38,27 +38,7 @@
 
 
 
-.carouselPackagings {
-  margin-top: $margingXXLarge ;
 
-  display: flex;
-  flex-direction: column;
-}
-
-.coloursContainer {
-  position: relative;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-
- .carouselControl {
-   background-color: #989898 !important;
-   color: #989898 !important;
-
- }
 
 .titleColoursAndPack {
   text-decoration: underline;
@@ -84,6 +64,10 @@
 
 .infoColoursAndPack {
   text-align: center;
+}
+
+.modalColours {
+  margin-top: 200px;
 }
 
 @media screen and (min-width: 992px) {

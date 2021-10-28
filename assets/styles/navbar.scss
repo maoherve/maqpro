@@ -12,7 +12,7 @@
   color: $hover-color;
 }
 .navdrop:active {
-  color: $hover-color !important;
+  background-color: $police-color-dark;
 }
 
 
@@ -36,6 +36,10 @@
   .logoName {
     margin-top: 10px;
   }
+
+  .dropdown-menu {
+    margin-left: 10px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -44,6 +48,7 @@
     border-radius: 15px;
     box-shadow: 0 5px 12px rgb(60 82 95 / 65%);
     opacity: 90%;
+    margin-left: 30px;
   }
 
   .navbarMaqPro {

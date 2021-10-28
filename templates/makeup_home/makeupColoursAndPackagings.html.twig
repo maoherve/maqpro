@@ -37,22 +37,22 @@
                 {% for makeupRefDetails in makeupColoursDetails %}
                         <div class="item-zoom card  m-3" style="width: 12rem; height: 12rem;">
                             <a type="button" class="" data-bs-toggle="modal" data-bs-target="#a{{ makeupRefDetails.id }}">
-                            <img src="{{ vich_uploader_asset(makeupRefDetails, 'imageFile') }}"
-                                 class="mt-2" alt="colours picture">
+                                <img src="{{ vich_uploader_asset(makeupRefDetails, 'imageFile') }}"
+                                     class="mt-2" alt="colours picture">
+                                <p class="refTexte card-body">{{ makeupRefDetails.name }}</p>
                             </a>
-                            <p class="refTexte card-body">{{ makeupRefDetails.name }}</p>
                         </div>
 
 
                     <!-- Modal -->
-                    <div class="modal fade" id="a{{ makeupRefDetails.id }}" tabindex="-1" aria-labelledby="a{{ makeupRefDetails.id }}" aria-hidden="true">
+                    <div class="modalColours modal fade" id="a{{ makeupRefDetails.id }}" tabindex="-1" aria-labelledby="a{{ makeupRefDetails.id }}" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class=" card  ">
+                                    <div class="card">
                                             <img src="{{ vich_uploader_asset(makeupRefDetails, 'imageFile')  }}"
                                                  class="mt-2" alt="colours picture">
                                         <p class="refTexte card-body">{{ makeupRefDetails.name }}</p>
