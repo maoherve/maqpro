@@ -36,3 +36,12 @@ vich_uploader:
             upload_destination: '%kernel.project_dir%/public/images/colours'
             delete_on_update: true
             delete_on_remove: true
+
+
+        carousel_images:
+            # alias for acced picture via navigator
+            uri_prefix: /images/carousel
+            # path stokage directory
+            upload_destination: '%kernel.project_dir%/public/images/carousel'
+            delete_on_update: true
+            delete_on_remove: true
