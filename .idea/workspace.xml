@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/maqpro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/maqpro.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +162,69 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
       <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata 2" />
+      <path value="$PROJECT_DIR$/vendor/psr/log 2" />
+      <path value="$PROJECT_DIR$/vendor/psr/container 2" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache 2" />
+      <path value="$PROJECT_DIR$/vendor/psr/link 2" />
+      <path value="$PROJECT_DIR$/vendor/twig/extra-bundle 2" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig 2" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser 2" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle 2" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator 2" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog 2" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version 2" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest 2" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit 2" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage 2" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/expression-language 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailer 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/password-hasher 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle 2" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset 2" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations 2" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence 2" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle 2" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common 2" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle 2" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache 2" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations 2" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections 2" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager 2" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector 2" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type 2" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version 2" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter 2" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code 2" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser 2" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator 2" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state 2" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup 2" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment 2" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert 2" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts 2" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock 2" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver 2" />
     </include_path>
   </component>
   <component name="ProjectId" id="1wBocdSXJ3G6H7Ck0syTu2Q2LJX" />
@@ -173,8 +239,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -210,6 +277,10 @@
       <workItem from="1631035607031" duration="20000" />
       <workItem from="1631035649651" duration="6000" />
       <workItem from="1631055534495" duration="42510000" />
+      <workItem from="1638016594560" duration="977000" />
+      <workItem from="1638017585924" duration="16000" />
+      <workItem from="1638017605001" duration="3780000" />
+      <workItem from="1638061125640" duration="333000" />
     </task>
     <servers />
   </component>
@@ -227,5 +298,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
