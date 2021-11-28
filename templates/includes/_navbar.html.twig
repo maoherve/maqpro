@@ -7,11 +7,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navItems navbar-nav">
-                <a class="navlink nav-link" href="{{ path('makeup_index') }}">Produits beauté</a>
+
+                <li class="nav-item dropdown">
+                    <a class="navlink nav-link">Produits beauté</a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="navdrop dropdown-item " href="{{ path('makeup_index') }}">Global</a>
+                        <a class="navdrop dropdown-item" href="{{ path('makeup_Products', {'makeup_id': 1}) }}">Fond de teint</a>
+                        <a class="navdrop dropdown-item" href="{{ path('makeup_Products', {'makeup_id': 2}) }}">Lèvre</a>
+                        <a class="navdrop dropdown-item" href="{{ path('makeup_Products', {'makeup_id': 3}) }}">Yeux</a>
+                    </div>
+                </li>
+
                 <a class="navlink nav-link" href="">Effets spéciaux / Secourisme</a>
-                <a class="navlink nav-link" href="">Grand publique</a>
+                <a class="navlink nav-link" href="{{ path('makeup_artist') }}">Professionnels du
+                    maquillage</a>
+                <a class="navlink nav-link" href="{{ path('general_public') }}">Grand publique</a>
                 <a class="navlink nav-link" href="">Nos distributeurs</a>
-                <a class="navlink nav-link" href="">Contactez nous !</a>
 
                 {% if app.user %}
                     {% if is_granted("ROLE_ADMIN") %}

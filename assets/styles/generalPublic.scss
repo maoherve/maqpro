@@ -1,0 +1,15 @@
+
+@media screen and (min-width: 990px) {
+  .generalPublicContainer {
+    margin-top: $margingXXLarge;
+  }
+}
+@media screen and (max-width: 990px) {
+  .generalPublicContainer {
+    margin-top: $margingLarge;
+  }
+}
+
+.generalPublicText {
+  color: #1C1C1C;
+}

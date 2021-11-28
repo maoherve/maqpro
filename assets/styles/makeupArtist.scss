@@ -1,0 +1,34 @@
+
+@media screen and (min-width: 990px) {
+  .makeupArtistContainer {
+    margin-top: $margingXXLarge;
+  }
+
+  .makeupArtistContainer:before {
+    content:url("/./public/images/background/makeupArtist.jpeg");
+    position:absolute;
+    opacity:.30;
+    z-index:-1;
+    filter: grayscale(70%);
+    margin-top: 75px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .makeupArtistContainer {
+    margin-top: $margingLarge;
+  }
+}
+
+.makeupArtistText {
+  color: #1C1C1C;
+}
+
+.mailMaqpro {
+  text-decoration: underline !important;
+  color: #1C1C1C;
+}
+
+.mailMaqpro:hover {
+  text-decoration: underline;
+  color: $police-color;
+}

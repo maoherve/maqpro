@@ -1,0 +1,35 @@
+{% extends 'adminlayout.html.twig' %}
+
+{% block main %}
+<div class="adminContainer">
+    <h1>GeneralPublic index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Text</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for general_public in general_publics %}
+            <tr>
+                <td>{{ general_public.id }}</td>
+                <td>{{ general_public.Text }}</td>
+                <td>
+                    <a href="{{ path('admin_general_public_edit', {'id': general_public.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('admin_general_public_new') }}">Create new</a>
+    <a href="{{ path('administration') }}">Back Menu</a>
+</div>
+{% endblock %}

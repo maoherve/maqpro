@@ -12,23 +12,29 @@ $margingSmall : 90px;
 $margingXSmall : 50px;
 
 
-$dark-color : #1A1A1A;
-$background-color : rgba(245, 245, 245, 0.86);
+$dark-color : #000000;
+$background-color : #FFFFFFDB;
+$hover-color: #BEBEBE;
 
 
+$police-color-soft : #FDFDFD;
 $police-color : #DB3A34;
-$police-color-dark : #1C1C1C;
+$police-color-dark : #1A1A1A;
 
 h1, H2, H3 {
   color: $police-color-dark;
 }
 
-p, .navlink, span, li, ul {
+p, .navlink, li {
+  color: $police-color-dark;
+}
+
+li {
   color: $police-color;
 }
 
 h1, H2, H3 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 p ,a ,span, li, ul, label {

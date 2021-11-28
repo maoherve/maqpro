@@ -1,3 +1,20 @@
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+.dropdown-menu {
+  background-color: $dark-color;
+}
+.navdrop {
+  color: $hover-color;
+}
+.navdrop:active {
+  background-color: $police-color-dark;
+}
+
 
 .navbarMaqPro {
   background-color: $dark-color;
@@ -15,7 +32,24 @@
   font-family: 'Urbanist', sans-serif;
 }
 
+@media screen and (max-width: 992px) {
+  .logoName {
+    margin-top: 10px;
+  }
+
+  .dropdown-menu {
+    margin-left: 10px;
+  }
+}
+
 @media screen and (min-width: 992px) {
+
+  .dropdown-menu {
+    border-radius: 15px;
+    box-shadow: 0 5px 12px rgb(60 82 95 / 65%);
+    opacity: 90%;
+    margin-left: 30px;
+  }
 
   .navbarMaqPro {
     height: 130px;
@@ -79,7 +113,6 @@
     margin-left: 30px;
     margin-right: 30px;
     position: relative;
-
   }
 
   .navlink:after {

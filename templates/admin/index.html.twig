@@ -55,6 +55,30 @@
                 </div>
             </div>
 
+            <div class="card col-6 mt-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Admin du carousel.</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Modifier le carousel.</h6>
+                    <a class="btn" href="{{ path('admin_carousel_index') }}">Ici !</a>
+                </div>
+            </div>
+
+            <div class="card col-6 mt-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Admin general public.</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Modifier general public.</h6>
+                    <a class="btn" href="{{ path('admin_general_public_index') }}">Ici !</a>
+                </div>
+            </div>
+
+            <div class="card col-6 mt-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Admin makeup artist.</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Modifier makeup artist.</h6>
+                    <a class="btn" href="{{ path('admin_makeup_artist_index') }}">Ici !</a>
+                </div>
+            </div>
+
             {% if is_granted('ROLE_SUPER_ADMIN') %}
                 <div class="card col-6 mt-3" style="width: 18rem;">
                     <div class="card-body">

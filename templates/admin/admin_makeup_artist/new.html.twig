@@ -1,0 +1,11 @@
+{% extends 'adminlayout.html.twig' %}
+
+{% block main %}
+    <div class="adminContainerCKEDITOR container">
+        <h1>Create new MakeupArtist</h1>
+
+        {{ include('admin/admin_makeup_artist/_form.html.twig') }}
+
+        <a href="{{ path('admin_makeup_artist_index') }}">back to list</a>
+    </div>
+{% endblock %}

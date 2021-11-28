@@ -1,13 +1,20 @@
+.carouselHome {
+  margin-top: 120px;
+}
 
 
-  .homeTextSection {
-  margin-top: $margingXXLarge;
-  margin-bottom: $margingSmall;
+.homeTextSection {
+margin-top: $margingXXLarge;
+margin-bottom: $margingSmall;
 }
 
 @media screen and (max-width: 990px) {
   .homeTextSection {
     margin-top: $margingSmall;
+  }
+
+  .carouselHome {
+    margin-top: 54px;
   }
 }
 
@@ -18,7 +25,7 @@
   color: $police-color-dark;
 }
 
-.test p:first-child::first-letter{
+.homeTextContainer p:first-child::first-letter{
   color: $police-color;
   font-weight: bold;
   font-size: 70px;
@@ -28,24 +35,48 @@
   margin-top: -3px;
 }
 
+.line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
 
+.line2 {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
 .barre {
+  height: 2px;
+  width: 30%;
+  background-color: $dark-color;
+}
+.barre2 {
   height:2px;
-  width: 80%;
+  width: 40%;
   margin: 0 auto;
   background-color: $dark-color;
 }
+
 
 .homeLink {
   margin-top: $margingSmall;
 }
 
 .homeCard {
-  border-radius: 30px;
-  background-color: white !important;
-  box-shadow: 5px 5px 3px rgba(84, 84, 84, 0.48);
+  border-radius: 5px;
+  background-color: #FFFFFFDB !important;
+  box-shadow: 0 5px 15px rgb(60 82 95 / 55%);
   position: relative;
-  width: 23rem;
+  width: 300px;
+  height: 300px;
   display: flex;
   justify-content: center;
 }
@@ -99,5 +130,6 @@
       cursor:pointer;
     }
   }
+
 
 

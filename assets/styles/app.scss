@@ -4,7 +4,11 @@
 @import 'makeup';
 @import 'footer';
 @import 'admin';
+@import 'generalPublic';
+@import 'makeupArtist';
+
 
 body {
     background-color: $background-color;
 }
+

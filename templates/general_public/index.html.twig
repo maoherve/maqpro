@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}MaqPro{% endblock %}
+
+{% block main %}
+    <div class="generalPublicContainer container">
+        {% for text in generalPublic %}
+            <span class="generalPublicText">
+                {{ text.text |raw}}
+                Les maquillages sont réalisés uniquement sur rendez-vous à Paris,
+                au prix de 120 € la séance. <a class="mailMaqpro">Contactez-nous</a> pour prendre rendez-vous.
+            </span>
+        {% endfor %}
+    </div>
+{% endblock %}

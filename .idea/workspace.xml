@@ -3,13 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="f608d34c-a8f5-44fd-9224-7a9ab7df31f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/makeup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/makeup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/makeup_home/makeupColoursAndPackagings.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeup_home/makeupColoursAndPackagings.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -159,6 +164,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
       <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/ckeditor-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1wBocdSXJ3G6H7Ck0syTu2Q2LJX" />
@@ -179,8 +187,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Controller/Admin" />
       <recent name="$PROJECT_DIR$/templates/admin" />
+      <recent name="$PROJECT_DIR$/src/Controller/Admin" />
+      <recent name="$PROJECT_DIR$/public/images/carousel" />
+      <recent name="$PROJECT_DIR$/public/images/background" />
       <recent name="$PROJECT_DIR$/templates/includes" />
     </key>
   </component>
@@ -210,6 +220,14 @@
       <workItem from="1631035607031" duration="20000" />
       <workItem from="1631035649651" duration="6000" />
       <workItem from="1631055534495" duration="42510000" />
+      <workItem from="1632915980141" duration="29262000" />
+      <workItem from="1633686617565" duration="1756000" />
+      <workItem from="1633869862586" duration="628000" />
+      <workItem from="1633879439637" duration="2427000" />
+      <workItem from="1634057752197" duration="11473000" />
+      <workItem from="1634729086911" duration="6462000" />
+      <workItem from="1635086851708" duration="3698000" />
+      <workItem from="1635320445396" duration="8884000" />
     </task>
     <servers />
   </component>

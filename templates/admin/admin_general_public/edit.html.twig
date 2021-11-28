@@ -1,0 +1,13 @@
+{% extends 'adminlayout.html.twig' %}
+
+{% block main %}
+<div class="adminContainerCKEDITOR container">
+    <h1>Edit GeneralPublic</h1>
+
+    {{ include('admin/admin_general_public/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('admin_general_public_index') }}">back to list</a>
+
+    {{ include('admin/admin_general_public/_delete_form.html.twig') }}
+</div>
+{% endblock %}
